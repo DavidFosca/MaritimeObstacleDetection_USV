@@ -1,0 +1,3 @@
+C:/Users/David/Desktop/NTNU/Cybernetic Project/ZED/zed-examples-master/svo recording/recording/cpp/build/CMakeFiles/ZED_SVO_Recording.dir
+C:/Users/David/Desktop/NTNU/Cybernetic Project/ZED/zed-examples-master/svo recording/recording/cpp/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/David/Desktop/NTNU/Cybernetic Project/ZED/zed-examples-master/svo recording/recording/cpp/build/CMakeFiles/ZERO_CHECK.dir
