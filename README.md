@@ -11,7 +11,7 @@ As already mentioned, the U-Net segmentation model is evaluated with 100 images 
 
 Below is an explanation of what can be found in each of the directories. It is important to mention that all of the source files include detailed comments. In addition, all the build procedures for the Jetson devices are executed using CMAKE, so it is important to respect the file structure already given in the directories and that can be directly cloned. In addition, all of the file PATHs have to be changed depending on the system and device. Finally, every Python script was developed using Google Colab, so they can also be easily deployed in that development environment.
 
-  #Obstacle Detection and Proximity Alert Application
+  **Obstacle Detection and Proximity Alert Application**
   (i) Jetson Xavier NX and Nano: Includes two directories with the necessary files to
   build the C++ application on the Jetson devices. The application needs the name
   of the verification video as an input argument. In addition, it uses the stereo-camera
@@ -26,11 +26,11 @@ Below is an explanation of what can be found in each of the directories. It is i
   run until it finishes processing all the ".svo" video frames and will also provide a
   verification video.
 
-  ONNX Configuration CMAKE
+  **ONNX Configuration CMAKE**
   (i) ONNX-cmakeconfig: Includes the cmake configuration file for ONNX runtime in
       Jetpack which is provided by (https://github.com/microsoft/onnxruntime/issues/3124).
   
-  Record Video at the Edge
+  **Record Video at the Edge**
   (i) Record SVO Video: Includes the files needed to build the C++ application to
       record 100 frames in ".svo" format. This is a modified code provided by StereolabsSDK 
       examples (https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/cpp)
@@ -43,21 +43,21 @@ Below is an explanation of what can be found in each of the directories. It is i
       Video Generation Python script needs to create the OtterNet output mask video
       results.
   
-  OtterNet Training
-  (i) Dataset Modification - Script: Includes the python script that converts the
+  **OtterNet Training**
+  ⋅⋅*(i) Dataset Modification - Script: Includes the python script that converts the
       public dataset to the binarized format as required by the OtterNet training script.
-  (ii) OtterNet Training - Script: Includes the python script to train the U-Net neural
+  ⋅⋅*(ii) OtterNet Training - Script: Includes the python script to train the U-Net neural
         network called the OtterNet.
-  (iii) Convert Model to ONNX - Script: Includes the python script to convert a
+  ⋅⋅*(iii) Convert Model to ONNX - Script: Includes the python script to convert a
         keras tensorflow model to ONNX format. The script also includes the quantization
         procedure.
-  (iv) MaSTr1325 Modified Dataset: Includes a Google Drive link to all the 1325
+  ⋅⋅*(iv) MaSTr1325 Modified Dataset: Includes a Google Drive link to all the 1325
        images and binarized target masks from the original public dataset.
-  (v) Otter Dataset: Includes a Google Drive to all the 100 images and binarized target
+  ⋅⋅*(v) Otter Dataset: Includes a Google Drive to all the 100 images and binarized target
       masks from the Otter Dataset. In addition, it also includes the remaining 200 images
       that are still to be labeled.
 
-  Experiments
+  **Experiments**
   (i) Tegrastats Analysis: Includes the python script that analyzes Tegrastats log files
       for both edge devices: Jetson Xavier-NX or Nano.
   (ii) Depth Extraction: Includes the files needed to build the C++ application to
