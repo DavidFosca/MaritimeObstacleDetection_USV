@@ -28,32 +28,32 @@ Below is an explanation of what can be found in each of the directories. It is i
 
   **ONNX Configuration CMAKE**
   (i) ONNX-cmakeconfig: Includes the cmake configuration file for ONNX runtime in
-      Jetpack which is provided by (https://github.com/microsoft/onnxruntime/issues/3124).
+      Jetpack which is [provided](https://github.com/microsoft/onnxruntime/issues/3124).
   
   **Record Video at the Edge**
   (i) Record SVO Video: Includes the files needed to build the C++ application to
-      record 100 frames in ".svo" format. This is a modified code provided by StereolabsSDK 
-      examples (https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/cpp)
+      record 100 frames in ".svo" format. This is a modified code provided by [StereolabsSDK 
+      examples](https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/cpp)
       and is used to record the 60 videos on the field, in order to
       generate the first instances of the Otter Dataset.
   (ii) Export SVO to AVI: Includes the files needed to build the C++ application to
-      export a SVO video to AVI format. This is a modified code provided by StereolabsSDK 
-      examples (https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/cpp)
+      export a SVO video to AVI format. This is a modified code provided by [StereolabsSDK 
+      examples](https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/cpp)
       and is used to get a ".avi" extension video that is the input the
       Video Generation Python script needs to create the OtterNet output mask video
       results.
   
   **OtterNet Training**
-  ⋅⋅*(i) Dataset Modification - Script: Includes the python script that converts the
+  (i) Dataset Modification - Script: Includes the python script that converts the
       public dataset to the binarized format as required by the OtterNet training script.
-  ⋅⋅*(ii) OtterNet Training - Script: Includes the python script to train the U-Net neural
+  (ii) OtterNet Training - Script: Includes the python script to train the U-Net neural
         network called the OtterNet.
-  ⋅⋅*(iii) Convert Model to ONNX - Script: Includes the python script to convert a
+  (iii) Convert Model to ONNX - Script: Includes the python script to convert a
         keras tensorflow model to ONNX format. The script also includes the quantization
         procedure.
-  ⋅⋅*(iv) MaSTr1325 Modified Dataset: Includes a Google Drive link to all the 1325
+  (iv) MaSTr1325 Modified Dataset: Includes a Google Drive link to all the 1325
        images and binarized target masks from the original public dataset.
-  ⋅⋅*(v) Otter Dataset: Includes a Google Drive to all the 100 images and binarized target
+  (v) Otter Dataset: Includes a Google Drive to all the 100 images and binarized target
       masks from the Otter Dataset. In addition, it also includes the remaining 200 images
       that are still to be labeled.
 
